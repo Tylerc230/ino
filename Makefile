@@ -11,5 +11,8 @@ doc:
 install:
 	python setup.py install --root $(DESTDIR) --prefix $(PREFIX) --exec-prefix $(PREFIX)
 
+install_osx:
+	python setup.py install
+
 .PHONY : doc
 .PHONY : install
